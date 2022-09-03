@@ -26,8 +26,11 @@
 
 ## Menggagalkan Test
 - Menggagalkan test menggunakan `panic` tidak disarankan, karena sekali gagal maka test yang lain tidak akan dijalankan
-- `Fail()`
-- `FailNow()`
+
+### Fail() dan FailNow()
+- Behavior: tetap melanjutkan unit test
+  - `Fail()` | Blok program selanjutnya tetap dijalankan. Result: FAIL
+  - `FailNow()` | Blok program selanjutnya tidak dijalankan. Result: FAIL
 - `Error()`
 - `Fatal()`
-- 
+
