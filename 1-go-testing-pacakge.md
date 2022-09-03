@@ -17,3 +17,6 @@
   - Cth: TestHelloWorld()
 - Harus memiliki parameter *testing.T, tidak ada return
 
+## Menjalankan Test
+- Pindah working directory ke file yang ada testnya
+- Jalankan `go test`
