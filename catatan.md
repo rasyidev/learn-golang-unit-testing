@@ -37,3 +37,6 @@
 - `Error()` : Logging error lalu memanggil `Fail()`, blok program selanjutnya tetap dijalankan.
 - `Fatal()` : Logging error lalu memanggil `FailNow()`, blok program selanjutnya tetap dijalankan.
 
+## Assertion
+- Logging error menggunakan library github.com/stretchr/testify/assert
+- Lengkap, mudah, mantap lah
