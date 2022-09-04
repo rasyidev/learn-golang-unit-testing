@@ -38,5 +38,9 @@
 - `Fatal()` : Logging error lalu memanggil `FailNow()`, blok program selanjutnya tetap dijalankan.
 
 ## Assertion
-- Logging error menggunakan library github.com/stretchr/testify/assert
+- Logging error menggunakan library Testify github.com/stretchr/testify/assert
 - Lengkap, mudah, mantap lah
+
+## Testify: assert vs require
+- assert: jika test gagal, akan memanggil `Fail()`
+- require: jika test gagal, akan memanggil `FailNow()`
