@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func MainTest(m *testing.M) {
+func TestMain(m *testing.M) {
 	fmt.Println("Before Testing")
 	m.Run()
 	fmt.Println("After Testing")
@@ -13,6 +13,7 @@ func MainTest(m *testing.M) {
 
 /*
 $ go test -v
+Before Testing
 === RUN   TestPembagian
 --- FAIL: TestPembagian (0.00s)
 === RUN   TestPembagianLagi
@@ -67,6 +68,7 @@ windows
 === RUN   TestHelloWorld
 --- PASS: TestHelloWorld (0.00s)
 FAIL
+After Testing
 exit status 1
-FAIL    learn-go-unit-test/helper       0.823s
+FAIL    learn-go-unit-test/helper       0.967s
 */
