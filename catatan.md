@@ -48,3 +48,6 @@
 ## Skip Test atau Membatalkan Test (bukan membuat test jadi FAIL)
 - Dibutuhkan saat adanya test untuk os tertentu saja
 - Menggunakan function `Skip()`
+
+## Before dan After Testing
+- Bisa menggunakan testing.M | Methodnya `Run()`
