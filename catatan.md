@@ -44,3 +44,7 @@
 ## Testify: assert vs require
 - assert: jika test gagal, akan memanggil `Fail()`
 - require: jika test gagal, akan memanggil `FailNow()`
+
+## Skip Test atau Membatalkan Test (bukan membuat test jadi FAIL)
+- Dibutuhkan saat adanya test untuk os tertentu saja
+- Menggunakan function `Skip()`
