@@ -51,3 +51,12 @@
 
 ## Before dan After Testing
 - Bisa menggunakan testing.M | Methodnya `Run()`
+
+## Table Testing
+- Membuat list test-case dan jalankan di `t.Run()` dalam loop test-case tersebut
+
+## Mock: Testify Mock
+- Unit Testing yang baik tidak harus menjalankan third-party service apapun.
+- Membuat testing untuk objek yang sulit untuk di-test.
+  - Cth: Testing third-party API
+- Jika desain kode program tidak baik, akan sulit untuk mengimplementasikan mock.
