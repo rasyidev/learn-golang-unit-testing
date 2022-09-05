@@ -60,3 +60,20 @@
 - Membuat testing untuk objek yang sulit untuk di-test.
   - Cth: Testing third-party API
 - Jika desain kode program tidak baik, akan sulit untuk mengimplementasikan mock.
+
+## Benchmark
+- Mekanisme menghitung performa kode aplikasi
+- Dilakukan berkali-kali secara otomatis
+- Menghasilkan laporan total run code dalam nanosecond, microsecond, milisecond, second
+
+## Benchmark Menggunakan `testing.B()`
+- Mirip dengan testing.T
+- Memiliki function `Fail()`, `FailNow()`, `Error()`, `Fatal()` dll
+- Dijalankan bersamaan dengan Unit Test.
+- Terdapat beberapa atribut tambahan untuk melakukan benchmarking
+- Attribute `N` digunakan untuk menghitung total iterasi benchmark
+- RULES
+  - Nama function re"Benchmark.+"
+  - Memiliki parameter `*testing.B`
+  - Tidak ada return value
+  - Nama file benchmark diakhiri dengan `_test`
