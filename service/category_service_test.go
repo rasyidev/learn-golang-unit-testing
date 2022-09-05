@@ -40,6 +40,12 @@ func BenchmarkHelloRasyidev(b *testing.B) {
 	}
 }
 
+func BenchmarkHelloTaeri(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		helper.HelloRasyidev("Kim Taeri Beauty")
+	}
+}
+
 /*BENCHMARK
 $ go test -v -run AplikasiNone -bench=.
 goos: windows
@@ -47,7 +53,9 @@ goarch: amd64
 pkg: learn-go-unit-test/service
 cpu: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
 BenchmarkHelloRasyidev
-BenchmarkHelloRasyidev-8        79124425                13.26 ns/op
+BenchmarkHelloRasyidev-8        91282789                12.68 ns/op
+BenchmarkHelloTaeri
+BenchmarkHelloTaeri-8           93429685                12.76 ns/op
 PASS
-ok      learn-go-unit-test/service      1.921s
+ok      learn-go-unit-test/service      4.293s
 */
