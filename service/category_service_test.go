@@ -59,3 +59,15 @@ BenchmarkHelloTaeri-8           93429685                12.76 ns/op
 PASS
 ok      learn-go-unit-test/service      4.293s
 */
+
+/*
+$ go test -v -run AplikasiNone -bench BenchmarkHelloTaeri
+goos: windows
+goarch: amd64
+pkg: learn-go-unit-test/service
+cpu: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+BenchmarkHelloTaeri
+BenchmarkHelloTaeri-8           74549440                13.43 ns/op
+PASS
+ok      learn-go-unit-test/service      1.062s
+*/
