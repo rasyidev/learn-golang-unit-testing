@@ -77,3 +77,7 @@
   - Memiliki parameter `*testing.B`
   - Tidak ada return value
   - Nama file benchmark diakhiri dengan `_test`
+
+
+## Table Benchmark
+- Melakukan performance test dengan menggunakan data yang berbeda-beda.
