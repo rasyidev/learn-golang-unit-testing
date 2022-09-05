@@ -1,6 +1,8 @@
 package service
 
 import (
+	"learn-go-unit-test/entity"
+	"learn-go-unit-test/helper"
 	"learn-go-unit-test/repository"
 	"testing"
 
@@ -18,3 +20,34 @@ func TestCategoryService_GetNotFound(t *testing.T) {
 	assert.Nil(t, category)
 	assert.NotNil(t, err)
 }
+
+func TestCategoryService_GetSuccess(t *testing.T) {
+	category := entity.Category{
+		Id:   "1",
+		Name: "Laptop",
+	}
+	categoryRepository.Mock.On("FindByID", "2").Return(category)
+	res, err := categoryService.Get("2")
+	assert.NotNil(t, res)
+	assert.Nil(t, err)
+	assert.Equal(t, category.Id, res.Id)
+	assert.Equal(t, category.Name, res.Name)
+}
+
+func BenchmarkHelloRasyidev(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		helper.HelloRasyidev("Rasyidev")
+	}
+}
+
+/*BENCHMARK
+$ go test -v -run AplikasiNone -bench=.
+goos: windows
+goarch: amd64
+pkg: learn-go-unit-test/service
+cpu: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+BenchmarkHelloRasyidev
+BenchmarkHelloRasyidev-8        79124425                13.26 ns/op
+PASS
+ok      learn-go-unit-test/service      1.921s
+*/
